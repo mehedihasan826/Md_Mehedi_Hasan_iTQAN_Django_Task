@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-*kxsn+e#&!90-@$38-v$0%s%m8j^l9!)eieu@*#yzntwq#(#ai
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['itQAN_Django_Task.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = []
+ROOT_URLCONF = 'Md_Mehedi_Hasan_iTQAN_Django_Task.urls'
 
 TEMPLATES = [
     {
