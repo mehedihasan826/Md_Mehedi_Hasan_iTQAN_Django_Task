@@ -1,0 +1,1 @@
+web: gunicorn Md_Mehedi_Hasan_iTQAN_Django_Task.wsgi
