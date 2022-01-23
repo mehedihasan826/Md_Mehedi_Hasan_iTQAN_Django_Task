@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-*kxsn+e#&!90-@$38-v$0%s%m8j^l9!)eieu@*#yzntwq#(#ai
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['itQAN_Django_Task.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -112,7 +112,7 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False
 
 USE_TZ = True
 
