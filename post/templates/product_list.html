@@ -1,0 +1,32 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="post-entry">
+        <script type="text/javascript">
+        function myFunction() {
+            {% for name in details %}
+                var n = name.group;
+            {% endfor %}
+            document.getElementById("myText").innerHTML = n;
+        }
+        </script>
+    <h2 onload="myFunction()"><span id="myText">list</span></h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Image</th>
+      </tr>
+    {% for list in details %}
+        <tr>
+            <td><a href="{% url 'product_details' list.pk %}">{{ list.name }}</a></td>
+            <td><img src="{{ list.image.url }}" alt="{{ list.title }}" width="300"></td>
+        </tr>
+
+    {% endfor %}
+
+    </table>
+    </div>
+
+{% endblock content %}

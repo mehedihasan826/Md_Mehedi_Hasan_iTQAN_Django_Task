@@ -1,0 +1,10 @@
+<!-- templates/post_detail.html -->
+{% extends 'base.html' %}
+{% block content %}
+<div class="post-entry">
+<h2>{{ products.name }}</h2>
+    <h3>Category : {{ products.group }}</h3>
+    <p><img src="{{ products.image.url }}" alt="{{ products.name }}" width="300"></p>
+<p>{{ products.description }}</p>
+</div>
+{% endblock content %}
