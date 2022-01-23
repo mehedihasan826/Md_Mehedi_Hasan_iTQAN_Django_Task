@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Md_Mehedi_Hasan_iTQAN_Django_Task.urls'
+ROOT_URLCONF = []
 
 TEMPLATES = [
     {
