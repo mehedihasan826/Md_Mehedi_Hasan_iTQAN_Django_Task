@@ -18,3 +18,9 @@ class ProductDetailsView(DetailView):
     model = Product
     template_name = 'details.html'
     context_object_name = 'products'
+
+
+class SliderView(ListView):
+    model = Category
+    template_name = 'category.html'
+    context_object_name = 'slider'

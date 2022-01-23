@@ -9,6 +9,13 @@
 <body>
 <header>
 <h1><a href="{% url 'home' %}">iTQAN Django Test</a></h1>
+    {% if user.is_authenticated %}
+        <p align="right"><b>Hello! {{ user.username }}</b></p>
+        <p align="right"><b><a href="{% url "logout" %}">logout</a></b></p>
+    {% else %}
+        <p><b><i>You must have to log in to view category!</i></b></p>
+    {% endif %}
+
 </header>
 <div>
 {% block content %}
@@ -16,3 +23,4 @@
 </div>
 </body>
 </html>
+

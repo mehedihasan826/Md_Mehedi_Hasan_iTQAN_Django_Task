@@ -2,9 +2,9 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="post-entry">
-<h2>{{ products.name }}</h2>
-    <h3>Category : {{ products.group }}</h3>
-    <p><img src="{{ products.image.url }}" alt="{{ products.name }}" width="300"></p>
-<p>{{ products.description }}</p>
+<h2 ALIGN="center">Product name: {{ products.name }}</h2>
+    <h3 align="center">Category : {{ products.group }}</h3>
+    <p align="center"><img src="{{ products.image.url }}" alt="{{ products.name }}" width="400"></p>
+<p><b>Product Description: </b>{{ products.description }}</p>
 </div>
 {% endblock content %}

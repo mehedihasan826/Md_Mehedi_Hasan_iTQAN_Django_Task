@@ -2,9 +2,9 @@
 
 {% extends 'base.html' %}
 {% block content %}
-    <h2>Category List</h2>
+    <h2 align="center">Category List</h2>
     <div class="post-entry">
-    <table>
+    <table align="center">
       <tr>
         <th>Name</th>
         <th>Image</th>
@@ -14,6 +14,7 @@
             <td><a href="{% url 'category_details' list.pk %}">{{ list.title }}</a></td>
             <td><img src="{{ list.image.url }}" alt="{{ list.title }}" width="300"></td>
         </tr>
+
 
     {% endfor %}
 
